@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/0b92670209.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-overlay">
+        <div class="hero-holder" id="hero-holder">
+          <div class="masks"><span class="fas fa-theater-masks"></span></div>
+          <div class="line"></div>
+          <div class="title">
+            <h1>ARTISTIC HUMANS</h1>
+            <h3>"Empowering Art, Creating Communities"</h3>
+          </div>
+          <div class="line"></div>
+          <div class="nav">
+            <div onclick="goIntro()" class="nav-tab" style="border: none">
+              INTRO
+            </div>
+            <div onclick="goAbout()" class="nav-tab">ABOUT</div>
+            <div onclick="goWork()" class="nav-tab">WORK</div>
+            <div onclick="goGallery()" class="nav-tab">GALLERY</div>
+            <div onclick="goContact()" class="nav-tab">CONTACT</div>
+          </div>
+        </div>
+      </div>
+      <div class="widget" id="widget-intro">
+        <div class="close-div" onclick="closeIntro()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <h1>INTRO</h1>
+        <img src="intro.jpg" />
+        <h3>OUR VISION:</h3>
+        <div class="widget-body">
+          <div class="widget-line"></div>
+          <p>
+            “We are working on to build World’s largest community of youngest
+            creators. Apart from that we committed to build a community and a
+            research Centre that creates a space for every Creative Scientist
+            who aspire to make the world better through their vision, stories
+            and creativity. We are here to create a better structure on life
+            approach, opportunities, future jobs, work culture and experiences
+            that explores new boundaries of human potentials”.
+          </p>
+        </div>
+      </div>
+      <div class="widget" id="widget-contact">
+        <div class="close-div" onclick="closeContact()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <h1>CONTACT</h1>
+        <div class="sub-body">
+          <h3><i class="fas fa-envelope"></i>EMAIL:</h3>
+          <p>
+            <a href="mailto:artistichumansinfo@gmail.com">
+              artistichumansinfo@gmail.com
+            </a>
+          </p>
+          <p>
+            <a href="mailto:darshan.artistichumans@gmail.com">
+              darshan.artistichumans@gmail.com
+            </a>
+          </p>
+        </div>
+        <div class="sub-body">
+          <h3><i class="fas fa-phone"></i>PHONE:</h3>
+          <p><a href="tel:+919930732829">+91 9930732829</a></p>
+          <p><a href="tel:+917977517441">+91 7977517441</a></p>
+        </div>
+        <div class="icons">
+          <div class="icon">
+            <a href="https://facebook.com/artistichumans"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
+          <div class="icon">
+            <a href="https://instagram.com/theartistichumans"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <div class="icon">
+            <a href="https://twitter.com/ArtisticHumans"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </div>
+          <div class="icon">
+            <a href="https://linkedin.com/company/artistic-humans"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="widget" id="widget-gallery">
+        <div class="close-div" onclick="closeGallery()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <h1>GALLERY</h1>
+        <div class="gallery-body">
+          <div class="arrow left" onclick="prevPic()">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <img src="Gallery1.jpg" id="gallery-img" />
+          <div class="arrow right" onclick="nextPic()">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  height: 100dvh;
+}
+
+section.hero {
+  background-color: black;
+  background-image: url("hero.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-holder {
+  width: 40vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  visibility: visible;
+}
+
+.hero-holder .masks {
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.masks svg {
+  color: white;
+  width: 70%;
+  height: 70%;
+}
+
+.hero-holder .line,
+.hero-holder .pre-nav {
+  width: 2px;
+  height: 10vh;
+  background-color: white;
+}
+
+.hero-holder .title {
+  width: 100%;
+  height: 25vh;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-holder .title h1 {
+  color: white;
+  font-size: 3vw;
+  font-family: "Acme", sans-serif;
+  letter-spacing: 5px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.hero-holder .title h3 {
+  color: white;
+  font-size: 1vw;
+  font-family: "Calibri", sans-serif;
+  font-weight: lighter;
+  margin: 1rem;
+}
+
+.hero-holder .nav {
+  width: 100%;
+  height: 5vh;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+}
+
+.nav .nav-tab {
+  border-left: 1px solid white;
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1vw;
+}
+
+.nav .nav-tab:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  user-select: none;
+}
+
+.widget {
+  visibility: hidden;
+  width: 500px;
+  height: 90vh;
+  background-color: rgba(27, 31, 34, 0.85);
+  position: absolute;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.widget h1 {
+  width: fit-content;
+  border-bottom: 2px solid white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding-bottom: 5px;
+  letter-spacing: 7px;
+}
+
+.widget img {
+  width: 100%;
+  margin: 2.5% 0;
+}
+
+.widget h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 3px;
+  align-items: center;
+  display: flex;
+}
+
+.widget-body {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0.5rem;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.widget-line {
+  width: 10px;
+  background-color: white;
+}
+
+.widget-body p {
+  font-family: "Montserrat", sans-serif;
+  padding: 0 1rem;
+  line-height: 3vh;
+}
+
+.close-div {
+  border-radius: 50%;
+  align-self: end;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  padding: 7px;
+}
+
+.close-div:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.widget svg {
+  font-size: 25px;
+  align-self: end;
+}
+
+#widget-contact {
+  width: 500px;
+  height: 60vh;
+}
+
+h3 svg {
+  margin-right: 10px;
+}
+
+#widget-contact p a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: white;
+}
+
+.icons {
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0;
+}
+
+.icon {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 24px;
+  padding: 10px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.icon svg {
+  font-size: 24px;
+  color: white;
+}
+
+#widget-gallery {
+  width: 800px;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-body {
+  width: 100%;
+  height: 50vh;
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#widget-gallery .gallery-body img {
+  height: 100%;
+  width: auto;
+  max-width: 80%;
+  margin: 0 1rem;
+}
+
+#widget-gallery .gallery-body .arrow {
+  display: flex;
+  padding: 15px;
+  align-self: center;
+  background-color: rgba(255, 0, 0, 0);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+#widget-gallery .gallery-body .arrow:hover {
+  background-color: rgba(255, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+#widget-gallery .gallery-body .arrow svg {
+  font-size: 20px;
+}
+
+#widget-gallery h1 {
+  margin-left: calc(50px + 1rem);
+}
+
+@media only screen and (max-width: 700px) {
+  .hero-holder {
+    width: 90vw;
+    height: 90vh;
+  }
+
+  .hero-holder .title {
+    width: 100%;
+  }
+
+  .hero-holder .nav {
+    flex-direction: column;
+    width: fit-content;
+    min-width: 50vw;
+    height: 25vh;
+  }
+
+  .nav .nav-tab {
+    height: calc(30vh / 5);
+    width: 100%;
+    font-size: 100%;
+    border-top: 1px solid white;
+    border-left: 0;
+  }
+
+  .hero-holder .title h1 {
+    font-size: 175%;
+  }
+
+  .hero-holder .title h3 {
+    font-size: 90%;
+  }
+
+  .hero-holder .masks {
+    width: 10vh;
+    height: 10vh;
+  }
+}
