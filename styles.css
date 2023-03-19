@@ -20,6 +20,7 @@ section.hero {
   background-color: black;
   background-image: url("hero.jpg");
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,7 +98,7 @@ section.hero {
 }
 
 .hero-holder .nav {
-  width: 100%;
+  width: 130%;
   height: 5vh;
   border: 1px solid white;
   border-radius: 5px;
@@ -127,7 +128,7 @@ section.hero {
   height: 85%;
   background-color: rgba(27, 31, 34, 0.85);
   position: absolute;
-  padding: 2rem;
+  padding: 1.5rem 2rem;
   color: white;
   display: flex;
   flex-direction: column;
@@ -145,7 +146,7 @@ section.hero {
 .widget img {
   width: 100%;
   height: 40%;
-  object-fit: cover;
+  object-fit: contain;
   margin: 2.5% 0;
 }
 
@@ -155,12 +156,12 @@ section.hero {
   letter-spacing: 3px;
   align-items: center;
   display: flex;
+  text-transform: uppercase;
 }
 
 .widget-body {
   display: flex;
   flex-direction: row;
-  padding: 1rem 0.5rem;
   justify-content: space-between;
   flex-grow: 1;
 }
@@ -198,7 +199,7 @@ section.hero {
 
 #widget-contact {
   width: 500px;
-  height: 60vh;
+  height: fit-content;
 }
 
 h3 svg {
@@ -239,11 +240,17 @@ h3 svg {
   color: white;
 }
 
-#widget-gallery {
+#widget-gallery,
+#widget-showcase {
   width: 800px;
   height: 70vh;
   display: flex;
   justify-content: center;
+}
+
+#widget-showcase {
+  width: 500px;
+  height: 80vh;
 }
 
 .gallery-body {
@@ -255,14 +262,24 @@ h3 svg {
   justify-content: space-between;
 }
 
-#widget-gallery .gallery-body img {
+#widget-showcase .gallery-body {
+  height: 60vh;
+}
+
+.gallery-body img {
   height: 100%;
   width: auto;
   max-width: 80%;
   margin: 0 1rem;
 }
 
-#widget-gallery .gallery-body .arrow {
+#widget-showcase .gallery-body img {
+  height: 100%;
+  width: auto;
+  max-width: 70%;
+}
+
+.gallery-body .arrow {
   display: flex;
   padding: 15px;
   align-self: center;
@@ -272,17 +289,59 @@ h3 svg {
   border-radius: 50%;
 }
 
-#widget-gallery .gallery-body .arrow:hover {
+.gallery-body .arrow:hover {
   background-color: rgba(255, 0, 0, 0.3);
   cursor: pointer;
 }
 
-#widget-gallery .gallery-body .arrow svg {
+.gallery-body .arrow svg {
   font-size: 20px;
 }
 
-#widget-gallery h1 {
-  margin-left: calc(50px + 1rem);
+#widget-gallery h1,
+#widget-showcase h1 {
+  align-self: center;
+}
+
+#widget-work,
+#widget-about {
+  width: 80vw;
+}
+
+.page-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.page {
+  width: 39vw;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0);
+  height: 70vh;
+  flex-direction: column;
+}
+
+.page img {
+  height: fit-content;
+  margin: 0;
+  aspect-ratio: auto;
+}
+
+#widget-work h3 {
+  margin-bottom: 0;
+}
+
+#widget-work .widget-body p,
+ol li::marker {
+  font-size: 1.5vh;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 1rem;
+  line-height: 3vh;
+}
+
+#widget-about .widget-body p {
+  margin: 0;
 }
 
 @media only screen and (max-width: 700px) {
@@ -299,7 +358,7 @@ h3 svg {
     flex-direction: column;
     width: fit-content;
     min-width: 50vw;
-    height: 25vh;
+    height: 30vh;
   }
 
   .nav .nav-tab {
@@ -321,5 +380,41 @@ h3 svg {
   .hero-holder .masks {
     width: 10vh;
     height: 10vh;
+  }
+
+  .widget {
+    max-width: 80%;
+    overflow: hidden;
+    padding: 1.5rem;
+  }
+
+  .widget img {
+    height: auto;
+  }
+
+  .widget-body p {
+    font-size: 1.5vh;
+  }
+
+  .close-div {
+    padding: 0;
+  }
+
+  .gallery-body .arrow {
+    padding: 0;
+  }
+
+  .gallery-body img {
+    max-width: 70%;
+  }
+
+  .page-holder {
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  .page {
+    width: 100%;
+    height: fit-content;
   }
 }

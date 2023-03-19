@@ -6,15 +6,22 @@ function goIntro() {
 }
 
 function goAbout() {
-  console.log("About");
+  document.getElementById("widget-about").style.visibility = "visible";
+  document.getElementById("hero-holder").style.visibility = "hidden";
 }
 
 function goWork() {
-  console.log("Work");
+  document.getElementById("widget-work").style.visibility = "visible";
+  document.getElementById("hero-holder").style.visibility = "hidden";
 }
 
 function goGallery() {
   document.getElementById("widget-gallery").style.visibility = "visible";
+  document.getElementById("hero-holder").style.visibility = "hidden";
+}
+
+function goShowcase() {
+  document.getElementById("widget-showcase").style.visibility = "visible";
   document.getElementById("hero-holder").style.visibility = "hidden";
 }
 
@@ -40,25 +47,67 @@ function closeGallery() {
   document.getElementById("hero-holder").style.visibility = "visible";
 }
 
+function closeShowcase() {
+  document.getElementById("widget-showcase").style.visibility = "hidden";
+  document.getElementById("hero-holder").style.visibility = "visible";
+}
+
+function closeAbout() {
+  document.getElementById("widget-about").style.visibility = "hidden";
+  document.getElementById("hero-holder").style.visibility = "visible";
+}
+
+function closeWork() {
+  document.getElementById("widget-work").style.visibility = "hidden";
+  document.getElementById("hero-holder").style.visibility = "visible";
+}
+
 // Gallery Functions
 
-let current_pic = 1;
-let total_pics = 20;
+let gallery_current_pic = 1;
+let gallery_total_pics = 20;
 
 function nextPic() {
-  if (current_pic != total_pics) {
-    current_pic += 1;
+  if (gallery_current_pic != gallery_total_pics) {
+    gallery_current_pic += 1;
   } else {
-    current_pic = 1;
+    gallery_current_pic = 1;
   }
-  document.getElementById("gallery-img").src = "Gallery" + current_pic + ".jpg";
+  document.getElementById("gallery-img").src =
+    "Gallery" + gallery_current_pic + ".jpg";
 }
 
 function prevPic() {
-  if (current_pic != 1) {
-    current_pic -= 1;
+  if (gallery_current_pic != 1) {
+    gallery_current_pic -= 1;
   } else {
-    current_pic = total_pics;
+    gallery_current_pic = gallery_total_pics;
   }
-  document.getElementById("gallery-img").src = "Gallery" + current_pic + ".jpg";
+  document.getElementById("gallery-img").src =
+    "Gallery" + gallery_current_pic + ".jpg";
+}
+
+// Showcase Functions
+
+let showcase_current_pic = 1;
+let showcase_total_pics = 12;
+
+function nextShowcasePic() {
+  if (showcase_current_pic != showcase_total_pics) {
+    showcase_current_pic += 1;
+  } else {
+    showcase_current_pic = 1;
+  }
+  document.getElementById("showcase-img").src =
+    "Showcase" + showcase_current_pic + ".jpg";
+}
+
+function prevShowcasePic() {
+  if (showcase_current_pic != 1) {
+    showcase_current_pic -= 1;
+  } else {
+    showcase_current_pic = showcase_total_pics;
+  }
+  document.getElementById("showcase-img").src =
+    "Showcase" + showcase_current_pic + ".jpg";
 }
