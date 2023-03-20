@@ -30,6 +30,11 @@ function goContact() {
   document.getElementById("hero-holder").style.visibility = "hidden";
 }
 
+function goAM75() {
+  document.getElementById("widget-am75").style.visibility = "visible";
+  document.getElementById("hero-holder").style.visibility = "hidden";
+}
+
 // Closing Functions
 
 function closeIntro() {
@@ -59,6 +64,11 @@ function closeAbout() {
 
 function closeWork() {
   document.getElementById("widget-work").style.visibility = "hidden";
+  document.getElementById("hero-holder").style.visibility = "visible";
+}
+
+function closeAM75() {
+  document.getElementById("widget-am75").style.visibility = "hidden";
   document.getElementById("hero-holder").style.visibility = "visible";
 }
 
