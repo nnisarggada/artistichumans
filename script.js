@@ -121,3 +121,11 @@ function prevShowcasePic() {
   document.getElementById("showcase-img").src =
     "Showcase" + showcase_current_pic + ".jpg";
 }
+
+var typed = new Typed("#element", {
+  strings: ["Institutions", "Shows", "Locations"],
+  loop: true,
+  loopCount: Infinity,
+  typeSpeed: 150,
+  backSpeed: 50,
+});
