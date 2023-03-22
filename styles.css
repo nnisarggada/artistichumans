@@ -418,4 +418,9 @@ ol li::marker {
     width: 100%;
     height: fit-content;
   }
+
+  .gallery-body .arrow:hover {
+    background-color: rgba(255, 0, 0, 0);
+    cursor: pointer;
+  }
 }
