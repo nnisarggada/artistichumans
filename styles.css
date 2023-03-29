@@ -310,7 +310,8 @@ h3 svg {
 
 #widget-work,
 #widget-about,
-#widget-am75 {
+#widget-am75,
+#widget-partners {
   width: 80vw;
 }
 
@@ -347,6 +348,22 @@ ol li::marker {
 }
 
 #widget-about .widget-body p {
+  margin: 0;
+}
+
+.partners {
+  cursor: pointer;
+  border-bottom: 2px solid white;
+  width: fit-content;
+}
+
+#widget-partners {
+  height: 80%;
+  align-self: center;
+}
+
+#widget-partners img {
+  height: 80%;
   margin: 0;
 }
 

@@ -35,6 +35,12 @@ function goAM75() {
   document.getElementById("hero-holder").style.visibility = "hidden";
 }
 
+function goPartners() {
+  document.getElementById("widget-partners").style.visibility = "visible";
+  document.getElementById("widget-am75").style.visibility = "hidden";
+  document.getElementById("hero-holder").style.visibility = "hidden";
+}
+
 // Closing Functions
 
 function closeIntro() {
@@ -69,6 +75,11 @@ function closeWork() {
 
 function closeAM75() {
   document.getElementById("widget-am75").style.visibility = "hidden";
+  document.getElementById("hero-holder").style.visibility = "visible";
+}
+
+function closePartners() {
+  document.getElementById("widget-partners").style.visibility = "hidden";
   document.getElementById("hero-holder").style.visibility = "visible";
 }
 
