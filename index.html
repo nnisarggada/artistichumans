@@ -23,14 +23,13 @@
           </div>
           <div class="line"></div>
           <div class="nav">
-            <div onclick="goIntro()" class="nav-tab" style="border: none">
-              INTRO
-            </div>
+            <div onclick="goIntro()" class="nav-tab" style="border: none">INTRO</div>
             <div onclick="goAbout()" class="nav-tab">ABOUT</div>
             <div onclick="goWork()" class="nav-tab">WORK</div>
             <div onclick="goAM75()" class="nav-tab">AM75</div>
             <div onclick="goGallery()" class="nav-tab">GALLERY</div>
             <div onclick="goShowcase()" class="nav-tab">SHOWCASE</div>
+            <div onclick="goBlog()" class="nav-tab" id="blog-tab">BLOGS</div>
             <div onclick="goContact()" class="nav-tab">CONTACT</div>
           </div>
         </div>
@@ -293,6 +292,27 @@
           </div>
         </div>
       </div>
+
+      <div class="widget" id="widget-blog">
+        <div class="close-div" onclick="closeBlog()">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <h1>BLOGS</h1>
+        <h3 id="blog-title">Blog Title</h3>
+        <div class="gallery-body">
+          <div class="arrow left" onclick="prevBlog()">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+        <div class="widget-body">
+          <p id="blog-content">
+            Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis. Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis. Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+          </p>
+        </div>
+          <div class="arrow right" onclick="nextBlog()">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+      </div>
+
 
       <div class="widget" id="widget-partners">
         <div class="close-div" onclick="closePartners()">

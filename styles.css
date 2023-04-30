@@ -113,7 +113,7 @@ section.hero {
   align-items: center;
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 1vw;
+  font-size: 0.8vw;
 }
 
 .nav .nav-tab:hover {
@@ -365,6 +365,22 @@ ol li::marker {
 #widget-partners img {
   height: 80%;
   margin: 0;
+}
+
+#widget-blog {
+  width: 80vw;
+}
+
+#widget-blog .widget-body {
+  overflow-y: scroll;
+}
+
+.widget-body {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.widget-body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 
 @media only screen and (max-width: 700px) {

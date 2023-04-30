@@ -41,6 +41,11 @@ function goPartners() {
   document.getElementById("hero-holder").style.visibility = "hidden";
 }
 
+function goBlog() {
+  document.getElementById("widget-blog").style.visibility = "visible";
+  document.getElementById("hero-holder").style.visibility = "hidden";
+}
+
 // Closing Functions
 
 function closeIntro() {
@@ -80,6 +85,11 @@ function closeAM75() {
 
 function closePartners() {
   document.getElementById("widget-partners").style.visibility = "hidden";
+  document.getElementById("hero-holder").style.visibility = "visible";
+}
+
+function closeBlog() {
+  document.getElementById("widget-blog").style.visibility = "hidden";
   document.getElementById("hero-holder").style.visibility = "visible";
 }
 
@@ -132,6 +142,68 @@ function prevShowcasePic() {
   document.getElementById("showcase-img").src =
     "Showcase" + showcase_current_pic + ".jpg";
 }
+
+// Blog Functions
+
+let blogs = {}
+
+let current_blog = 1;
+let total_blogs = Object.keys(blogs).length;
+
+if (total_blogs == 0){
+  document.getElementById('blog-tab').style.display = "none"; 
+}
+else {
+  document.getElementById('blog-tab').style.display = "auto"; 
+}
+
+let blog_title = document.getElementById('blog-title');
+let blog_content = document.getElementById('blog-content');
+
+blog_title.innerText = Object.keys(blogs)[current_blog - 1];
+blog_content.innerText = Object.values(blogs)[current_blog - 1];
+
+function nextBlog() {
+  if (current_blog != total_blogs) {
+    current_blog += 1;
+  } else {
+    current_blog = 1;
+  }
+
+  blog_title.innerText = Object.keys(blogs)[current_blog - 1];
+  blog_content.innerText = Object.values(blogs)[current_blog - 1];
+}
+
+function prevBlog() {
+  if (current_blog != 1) {
+    current_blog -= 1;
+  } else {
+    current_blog = total_blogs;
+  }
+
+  blog_title.innerText = Object.keys(blogs)[current_blog - 1];
+  blog_content.innerText = Object.values(blogs)[current_blog - 1];
+}
+
+
+function addBlog() {
+  let add_blog_title = document.getElementById('add-blog-title').innerText;
+  let add_blog_content = document.getElementById('add-blog-content').innerText;
+
+  blogs[add_blog_title] = add_blog_content;
+
+  const blog_string = JSON.stringify(blogs);
+
+  fs.writeFile("blogs.json", blog_string, (error) => {
+    if (error) {
+      console.error(error);
+      throw error;
+    }
+    console.log("Blog added correctly");
+  });
+}
+
+// Typed.js
 
 var typed = new Typed("#element", {
   strings: ["Institutions", "Shows", "Locations"],
