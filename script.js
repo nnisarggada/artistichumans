@@ -145,7 +145,10 @@ function prevShowcasePic() {
 
 // Blog Functions
 
-let blogs = {}
+let blogs = {
+  "Blog Title": "Blog content",
+  
+}
 
 let current_blog = 1;
 let total_blogs = Object.keys(blogs).length;
