@@ -146,7 +146,7 @@ function prevShowcasePic() {
 // Blog Functions
 
 let blogs = {
-  
+  "Blog 1" : "Blog content" ,
 }
 
 let current_blog = 1;
