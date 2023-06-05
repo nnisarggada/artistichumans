@@ -145,21 +145,19 @@ function prevShowcasePic() {
 
 // Blog Functions
 
-let blogs = {
-  }
+let blogs = {};
 
 let current_blog = 1;
 let total_blogs = Object.keys(blogs).length;
 
-if (total_blogs == 0){
-  document.getElementById('blog-tab').style.display = "none"; 
-}
-else {
-  document.getElementById('blog-tab').style.display = "auto"; 
+if (total_blogs == 0) {
+  document.getElementById("blog-tab").style.display = "none";
+} else {
+  document.getElementById("blog-tab").style.display = "auto";
 }
 
-let blog_title = document.getElementById('blog-title');
-let blog_content = document.getElementById('blog-content');
+let blog_title = document.getElementById("blog-title");
+let blog_content = document.getElementById("blog-content");
 
 blog_title.innerText = Object.keys(blogs)[current_blog - 1];
 blog_content.innerText = Object.values(blogs)[current_blog - 1];
@@ -186,10 +184,9 @@ function prevBlog() {
   blog_content.innerText = Object.values(blogs)[current_blog - 1];
 }
 
-
 function addBlog() {
-  let add_blog_title = document.getElementById('add-blog-title').innerText;
-  let add_blog_content = document.getElementById('add-blog-content').innerText;
+  let add_blog_title = document.getElementById("add-blog-title").innerText;
+  let add_blog_content = document.getElementById("add-blog-content").innerText;
 
   blogs[add_blog_title] = add_blog_content;
 

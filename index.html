@@ -1,316 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Artistic Humans</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script
-      src="https://kit.fontawesome.com/0b92670209.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-    <link href="styles.css" rel="stylesheet" />
-  </head>
-  <body>
-    <section class="hero">
-      <div class="hero-overlay">
-        <div class="hero-holder" id="hero-holder">
-          <div class="masks"><span class="fas fa-theater-masks"></span></div>
-          <div class="line"></div>
-          <div class="title">
-            <h1>ARTISTIC HUMANS</h1>
-            <h3>"Empowering Art, Creating Communities"</h3>
-          </div>
-          <div class="line"></div>
-          <div class="nav">
-            <div onclick="goIntro()" class="nav-tab" style="border: none">INTRO</div>
-            <div onclick="goAbout()" class="nav-tab">ABOUT</div>
-            <div onclick="goWork()" class="nav-tab">WORK</div>
-            <div onclick="goAM75()" class="nav-tab">AM75</div>
-            <div onclick="goGallery()" class="nav-tab">GALLERY</div>
-            <div onclick="goShowcase()" class="nav-tab">SHOWCASE</div>
-            <div onclick="goBlog()" class="nav-tab" id="blog-tab">BLOGS</div>
-            <div onclick="goContact()" class="nav-tab">CONTACT</div>
-          </div>
-        </div>
-      </div>
-      <div class="widget" id="widget-intro">
-        <div class="close-div" onclick="closeIntro()">
-          <i class="fa-solid fa-xmark"></i>
-        </div>
-        <h1>INTRO</h1>
-        <img src="intro.jpg" />
-        <h3>OUR VISION:</h3>
-        <div class="widget-body">
-          <div class="widget-line"></div>
-          <p>
-            “We are working on to build World’s largest community of youngest
-            creators. Apart from that we committed to build a community and a
-            research Centre that creates a space for every Creative Scientist
-            who aspire to make the world better through their vision, stories
-            and creativity. We are here to create a better structure on life
-            approach, opportunities, future jobs, work culture and experiences
-            that explores new boundaries of human potentials”.
-          </p>
-        </div>
-      </div>
-      <div class="widget" id="widget-contact">
-        <div class="close-div" onclick="closeContact()">
-          <i class="fa-solid fa-xmark"></i>
-        </div>
-        <h1>CONTACT</h1>
-        <div class="sub-body">
-          <h3><i class="fas fa-envelope"></i>EMAIL:</h3>
-          <p>
-            <a href="mailto:artistichumansinfo@gmail.com">
-              artistichumansinfo@gmail.com
-            </a>
-          </p>
-        </div>
-        <div class="sub-body">
-          <h3><i class="fas fa-phone"></i>PHONE:</h3>
-          <p><a href="tel:+919930732829">+91 9930732829</a></p>
-        </div>
-        <div class="icons">
-          <div class="icon">
-            <a href="https://facebook.com/artistichumans"
-              ><i class="fa-brands fa-facebook-f"></i
-            ></a>
-          </div>
-          <div class="icon">
-            <a href="https://instagram.com/theartistichumans"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-          </div>
-          <div class="icon">
-            <a href="https://twitter.com/ArtisticHumans"
-              ><i class="fa-brands fa-twitter"></i
-            ></a>
-          </div>
-          <div class="icon">
-            <a href="https://linkedin.com/company/artistic-humans"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-      <div class="widget" id="widget-gallery">
-        <div class="close-div" onclick="closeGallery()">
-          <i class="fa-solid fa-xmark"></i>
-        </div>
-        <h1>GALLERY</h1>
-        <div class="gallery-body">
-          <div class="arrow left" onclick="prevPic()">
-            <i class="fa-solid fa-arrow-left"></i>
-          </div>
-          <img src="Gallery1.jpg" id="gallery-img" />
-          <div class="arrow right" onclick="nextPic()">
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
-        </div>
-      </div>
-      <div class="widget" id="widget-work">
-        <div class="close-div" onclick="closeWork()">
-          <i class="fa-solid fa-xmark"></i>
-        </div>
-        <h1>WORK</h1>
-        <div class="page-holder">
-          <div class="page 1">
-            <img src="work.jpg" />
-            <h3>OUR VARIOUS WINGS OF OPERATIONS:</h3>
-            <div class="widget-body">
-              <ol>
-                <li>
-                  <p>
-                    Content Creation : Content Creation : We expertise in
-                    producing theatre plays and live content, theme and event
-                    based performances.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Artistic Humans Communities : Our Flagship youth community
-                    initiative where students, scholars and creative
-                    professionals contribute in creating innovative policies for
-                    community driven initiatives.
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Curating Experiences : Theme based curations includes
-                    customized designing of events followed with a lineup of
-                    various artistic performances, workshops, speakers and
-                    activities.
-                  </p>
-                </li>
-              </ol>
-            </div>
-          </div>
-          <div class="page 2">
-            <h3>Theatre Production and Event based Curation:</h3>
-            <div class="widget-body">
-              <p>
-                ‘The Artist’ one of our most celebrated play won 10 accolades
-                all over India including winning Best Play Award in two
-                prestigious National Theatre Festivals. The play was released
-                commercially in the year 2018. Our various Theatrical production
-                collaborations includes plays like:
-                <br />
-                -‘Hum Sab Ek Hai’ (2019) with MCF Club
-                <br />
-                - ‘Kanchan Kachrawali’(2019) with Gulabgun Sab Seva Sanstha
-                <br />
-                - ‘Atulya Bharat’with MCF club (2019, Short Play, Tribute to
-                Mahatma Gandhi’s 150 birth Anniversary)
-              </p>
-            </div>
-            <img src="work2.jpg" />
-          </div>
-        </div>
-      </div>
-      <div class="widget" id="widget-about">
-        <div class="close-div" onclick="closeAbout()">
-          <i class="fa-solid fa-xmark"></i>
-        </div>
-        <h1>ABOUT</h1>
-        <div class="page-holder">
-          <div class="page 1">
-            <img src="about.jpg" />
-            <h3>WHO ARE WE?</h3>
-            <div class="widget-body">
-              <p>
-                Artistic Humans is a platform that represents the voice of
-                innovators, experimenters. It is a community of Young Creators,
-                Future Leaders, and Changemakers.
-              </p>
-            </div>
-          </div>
-          <div class="page 2">
-            <h3>WHAT DO WE DO?</h3>
-            <div class="widget-body">
-              <p>
-                We curate experiences, we connect humans, we address their
-                interest and passion. We initiate various artistry endeavors
-                that builds strong human communities driven with vision and a
-                realistic approach. In other words, we inspire, edutain and tell
-                stories in a way that our audiences are willing to hear from us!
-                We work on creating an alternative system that reflects
-                inclusiveness, creativity, equal opportunities that has an
-                innovation-driven approach enabling individuals to make the most
-                of one life as well as creating an impact that makes the world a
-                more better place to live. We are a platform that represents the
-                voice of every creative Human.
-              </p>
-            </div>
-            <h3>Where have we been so far?</h3>
-            <div class="widget-body">
-              <p>
-                Artistic Humans has explored many verticals which had a profound
-                impact on human society - from producing theatre plays,
-                conducting theatre workshop to promoting art & theatre in
-                underprivileged areas and empowering communities through various
-                artistry initiatives, we have been working towards building
-                India’s youngest community of creators and change-makers.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="widget" id="widget-showcase">
-        <div class="close-div" onclick="closeShowcase()">
-          <i class="fa-solid fa-xmark"></i>
-        </div>
-        <h1>SHOWCASE</h1>
-        <div class="gallery-body">
-          <div class="arrow left" onclick="prevShowcasePic()">
-            <i class="fa-solid fa-arrow-left"></i>
-          </div>
-          <img src="Showcase1.jpg" id="showcase-img" />
-          <div class="arrow right" onclick="nextShowcasePic()">
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
-        </div>
-      </div>
-      <div class="widget" id="widget-am75">
-        <div class="close-div" onclick="closeAM75()">
-          <i class="fa-solid fa-xmark"></i>
-        </div>
-        <h1>AMRIT MAHOTSAV 75×75×75</h1>
-        <div class="page-holder">
-          <div class="page 1">
-            <img src="am75.png" />
-            <h3>75 <span id="element" style="margin-left: 10px"></span></h3>
-            <div class="widget-body">
-              <p>
-                As India marks 75 years of Independence and celebrates Azadi Ka
-                Amrit Mahotsav, our project
-                <b>Amrit Mahotsav - 75 x 75 x 75</b> aims to celebrate the
-                spirit of freedom and the people who fought for our
-                independence, bringing theatre creators on one platform across
-                geographies. We will stage the play
-                <i>'Azad Hind Ki Chi Gatha'</i> (The story of Independent India)
-                across 75 locations, with 75 shows with 75 college/institutions.
-                Students of the same college with prepare and present the play
-                within their own college auditorium in Hindi-Marathi.
-              </p>
-            </div>
-          </div>
-          <div class="page 2">
-            <h3>WHY ARE WE DOING THIS PROJECT?</h3>
-            <div class="widget-body">
-              <p>
-                The project will boost and encourage theatre activities, groups
-                and theatre makers across institutions will get an opportunity
-                to work on a common goal and can also explore opportunities to
-                work with Artistic Humans, creating more opportunities to
-                collaborate and celebrate the spirit of creation. With this
-                venture, we will also work towards building the Artistic Humans
-                Art and Community Centre in collaboration with partner
-                institutions to support artistic practices and endeavours. This
-                will be only possible with the support of institutions.
-              </p>
-            </div>
-            <h3>Why is spreading of art and theatre important?</h3>
-            <div class="widget-body">
-              <p>
-                The world is now covered in a web of internet-assisted learning
-                programs, where you can find everything you need in seconds.
-                They get to have degrees and diplomas in a few clicks. In such a
-                world, we feel that it is important to make the fruits of
-                education and social responsibility available by using a more
-                impactful tool; performance. One of the world’s oldest texts,
-                Naatyashastra written by the legendary sage, Bharata talks about
-                how every performance has scientific dimensions and how the
-                spectator plays just an important role such as the performer.
-              </p>
-            </div>
-            <i
-              ><h3 onclick="goPartners()" class="partners">
-                CHECK OUT OUR PARTNERS
-              </h3></i
-            >
-          </div>
-        </div>
-      </div>
 
-      <div class="widget" id="widget-blog">
-        <div class="close-div" onclick="closeBlog()">
-          <i class="fa-solid fa-xmark"></i>
+<head>
+  <title>Artistic Humans</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://kit.fontawesome.com/0b92670209.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-overlay">
+      <div class="hero-holder" id="hero-holder">
+        <div class="masks"><span class="fas fa-theater-masks"></span></div>
+        <div class="line"></div>
+        <div class="title">
+          <h1>ARTISTIC HUMANS</h1>
+          <h3>"Empowering Art, Creating Communities"</h3>
         </div>
-        <h1>BLOGS</h1>
-        <h3 id="blog-title">Blog Title</h3>
-        <div class="gallery-body">
-          <div class="arrow left" onclick="prevBlog()">
-            <i class="fa-solid fa-arrow-left"></i>
+        <div class="line"></div>
+        <div class="nav">
+          <div onclick="goIntro()" class="nav-tab" style="border: none">INTRO</div>
+          <div onclick="goAbout()" class="nav-tab">ABOUT</div>
+          <div onclick="goWork()" class="nav-tab">WORK</div>
+          <div onclick="goAM75()" class="nav-tab">AM75</div>
+          <div onclick="goGallery()" class="nav-tab">GALLERY</div>
+          <div onclick="goShowcase()" class="nav-tab">SHOWCASE</div>
+          <div onclick="goBlog()" class="nav-tab" id="blog-tab">BLOGS</div>
+          <div onclick="goContact()" class="nav-tab">CONTACT</div>
+        </div>
+      </div>
+    </div>
+    <div class="widget" id="widget-intro">
+      <div class="close-div" onclick="closeIntro()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <h1>INTRO</h1>
+      <img src="intro.jpg" />
+      <h3>OUR VISION:</h3>
+      <div class="widget-body">
+        <div class="widget-line"></div>
+        <p>
+          “We are working on to build World’s largest community of youngest
+          creators. Apart from that we committed to build a community and a
+          research Centre that creates a space for every Creative Scientist
+          who aspire to make the world better through their vision, stories
+          and creativity. We are here to create a better structure on life
+          approach, opportunities, future jobs, work culture and experiences
+          that explores new boundaries of human potentials”.
+        </p>
+      </div>
+    </div>
+    <div class="widget" id="widget-contact">
+      <div class="close-div" onclick="closeContact()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <h1>CONTACT</h1>
+      <div class="sub-body">
+        <h3><i class="fas fa-envelope"></i>EMAIL:</h3>
+        <p>
+          <a href="mailto:artistichumansinfo@gmail.com">
+            artistichumansinfo@gmail.com
+          </a>
+        </p>
+      </div>
+      <div class="sub-body">
+        <h3><i class="fas fa-phone"></i>PHONE:</h3>
+        <p><a href="tel:+919930732829">+91 9930732829</a></p>
+      </div>
+      <div class="icons">
+        <div class="icon">
+          <a href="https://facebook.com/artistichumans"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <div class="icon">
+          <a href="https://instagram.com/theartistichumans"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="icon">
+          <a href="https://twitter.com/ArtisticHumans"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="icon">
+          <a href="https://linkedin.com/company/artistic-humans"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="widget" id="widget-gallery">
+      <div class="close-div" onclick="closeGallery()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <h1>GALLERY</h1>
+      <div class="gallery-body">
+        <div class="arrow left" onclick="prevPic()">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <img src="Gallery1.jpg" id="gallery-img" />
+        <div class="arrow right" onclick="nextPic()">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+    </div>
+    <div class="widget" id="widget-work">
+      <div class="close-div" onclick="closeWork()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <h1>WORK</h1>
+      <div class="page-holder">
+        <div class="page 1">
+          <img src="work.jpg" />
+          <h3>OUR VARIOUS WINGS OF OPERATIONS:</h3>
+          <div class="widget-body">
+            <ol>
+              <li>
+                <p>
+                  Content Creation : Content Creation : We expertise in
+                  producing theatre plays and live content, theme and event
+                  based performances.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Artistic Humans Communities : Our Flagship youth community
+                  initiative where students, scholars and creative
+                  professionals contribute in creating innovative policies for
+                  community driven initiatives.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Curating Experiences : Theme based curations includes
+                  customized designing of events followed with a lineup of
+                  various artistic performances, workshops, speakers and
+                  activities.
+                </p>
+              </li>
+            </ol>
           </div>
+        </div>
+        <div class="page 2">
+          <h3>Theatre Production and Event based Curation:</h3>
+          <div class="widget-body">
+            <p>
+              ‘The Artist’ one of our most celebrated play won 10 accolades
+              all over India including winning Best Play Award in two
+              prestigious National Theatre Festivals. The play was released
+              commercially in the year 2018. Our various Theatrical production
+              collaborations includes plays like:
+              <br />
+              -‘Hum Sab Ek Hai’ (2019) with MCF Club
+              <br />
+              - ‘Kanchan Kachrawali’(2019) with Gulabgun Sab Seva Sanstha
+              <br />
+              - ‘Atulya Bharat’with MCF club (2019, Short Play, Tribute to
+              Mahatma Gandhi’s 150 birth Anniversary)
+            </p>
+          </div>
+          <img src="work2.jpg" />
+        </div>
+      </div>
+    </div>
+    <div class="widget" id="widget-about">
+      <div class="close-div" onclick="closeAbout()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <h1>ABOUT</h1>
+      <div class="page-holder">
+        <div class="page 1">
+          <img src="about.jpg" />
+          <h3>WHO ARE WE?</h3>
+          <div class="widget-body">
+            <p>
+              Artistic Humans is a platform that represents the voice of
+              innovators, experimenters. It is a community of Young Creators,
+              Future Leaders, and Changemakers.
+            </p>
+          </div>
+        </div>
+        <div class="page 2">
+          <h3>WHAT DO WE DO?</h3>
+          <div class="widget-body">
+            <p>
+              We curate experiences, we connect humans, we address their
+              interest and passion. We initiate various artistry endeavors
+              that builds strong human communities driven with vision and a
+              realistic approach. In other words, we inspire, edutain and tell
+              stories in a way that our audiences are willing to hear from us!
+              We work on creating an alternative system that reflects
+              inclusiveness, creativity, equal opportunities that has an
+              innovation-driven approach enabling individuals to make the most
+              of one life as well as creating an impact that makes the world a
+              more better place to live. We are a platform that represents the
+              voice of every creative Human.
+            </p>
+          </div>
+          <h3>Where have we been so far?</h3>
+          <div class="widget-body">
+            <p>
+              Artistic Humans has explored many verticals which had a profound
+              impact on human society - from producing theatre plays,
+              conducting theatre workshop to promoting art & theatre in
+              underprivileged areas and empowering communities through various
+              artistry initiatives, we have been working towards building
+              India’s youngest community of creators and change-makers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="widget" id="widget-showcase">
+      <div class="close-div" onclick="closeShowcase()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <h1>SHOWCASE</h1>
+      <div class="gallery-body">
+        <div class="arrow left" onclick="prevShowcasePic()">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <img src="Showcase1.jpg" id="showcase-img" />
+        <div class="arrow right" onclick="nextShowcasePic()">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+    </div>
+    <div class="widget" id="widget-am75">
+      <div class="close-div" onclick="closeAM75()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <h1>AMRIT MAHOTSAV 75×75×75</h1>
+      <div class="page-holder">
+        <div class="page 1">
+          <img src="am75.png" />
+          <h3>75 <span id="element" style="margin-left: 10px"></span></h3>
+          <div class="widget-body">
+            <p>
+              As India marks 75 years of Independence and celebrates Azadi Ka
+              Amrit Mahotsav, our project
+              <b>Amrit Mahotsav - 75 x 75 x 75</b> aims to celebrate the
+              spirit of freedom and the people who fought for our
+              independence, bringing theatre creators on one platform across
+              geographies. We will stage the play
+              <i>'Azad Hind Ki Chi Gatha'</i> (The story of Independent India)
+              across 75 locations, with 75 shows with 75 college/institutions.
+              Students of the same college with prepare and present the play
+              within their own college auditorium in Hindi-Marathi.
+            </p>
+          </div>
+        </div>
+        <div class="page 2">
+          <h3>WHY ARE WE DOING THIS PROJECT?</h3>
+          <div class="widget-body">
+            <p>
+              The project will boost and encourage theatre activities, groups
+              and theatre makers across institutions will get an opportunity
+              to work on a common goal and can also explore opportunities to
+              work with Artistic Humans, creating more opportunities to
+              collaborate and celebrate the spirit of creation. With this
+              venture, we will also work towards building the Artistic Humans
+              Art and Community Centre in collaboration with partner
+              institutions to support artistic practices and endeavours. This
+              will be only possible with the support of institutions.
+            </p>
+          </div>
+          <h3>Why is spreading of art and theatre important?</h3>
+          <div class="widget-body">
+            <p>
+              The world is now covered in a web of internet-assisted learning
+              programs, where you can find everything you need in seconds.
+              They get to have degrees and diplomas in a few clicks. In such a
+              world, we feel that it is important to make the fruits of
+              education and social responsibility available by using a more
+              impactful tool; performance. One of the world’s oldest texts,
+              Naatyashastra written by the legendary sage, Bharata talks about
+              how every performance has scientific dimensions and how the
+              spectator plays just an important role such as the performer.
+            </p>
+          </div>
+          <i>
+            <h3 onclick="goPartners()" class="partners">
+              CHECK OUT OUR PARTNERS
+            </h3>
+          </i>
+        </div>
+      </div>
+    </div>
+
+    <div class="widget" id="widget-blog">
+      <div class="close-div" onclick="closeBlog()">
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+      <h1>BLOGS</h1>
+      <h3 id="blog-title">Blog Title</h3>
+      <div class="gallery-body">
+        <div class="arrow left" onclick="prevBlog()">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
         <div class="widget-body">
           <p id="blog-content">
-            Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis. Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis. Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
+            Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem
+            pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud
+            nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
+            pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem
+            duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt
+            duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris
+            sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis. Lorem ipsum dolor sit amet, officia
+            excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation
+            amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet
+            voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse
+            ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia
+            voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua
+            reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
+            consectetur et est culpa et culpa duis. Lorem ipsum dolor sit amet, officia excepteur ex fugiat
+            reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim
+            cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate
+            dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex
+            occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident
+            adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non
+            excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
+            culpa duis.
           </p>
         </div>
-          <div class="arrow right" onclick="nextBlog()">
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
+        <div class="arrow right" onclick="nextBlog()">
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
       </div>
 
 
@@ -321,8 +332,9 @@
         <h1>OUR PARTNERS</h1>
         <img src="partners.jpg" alt="" />
       </div>
-    </section>
+  </section>
 
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
+
 </html>
